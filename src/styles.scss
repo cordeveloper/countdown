@@ -1,1 +1,48 @@
 /* You can add global styles to this file, and also import other style files */
+
+body {
+    font-family: Roboto, sans-serif;
+}
+
+.appTitle{
+    text-transform: uppercase;
+    font-size: 5em;
+    color: #79a341;
+}
+
+.appFormContainer{
+    padding: 50px 0;
+}
+
+.appInput{
+    border: none;
+    border-bottom: 3px solid #efefef;
+    width: 100%;
+    color: grey;
+    font-size: 2em;
+    font-style: italic;
+    &:hover,
+    &:active,
+    &:focus{
+        outline: 0;
+    }
+}
+
+.appButton{
+    font-weight: bold;
+    border: none;
+    padding: 20px 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    color: #79A341;
+    float: right;
+    margin-top: 30px;
+    font-size: 1.1em;
+    font-style: italic;
+}
+
+.container{
+    width: 90%;
+    max-width: 960px;
+    margin: 100px auto;
+}
