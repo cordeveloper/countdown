@@ -1,0 +1,14 @@
+:host{
+    height: 60px;
+    border-radius: 25px;
+    border: 3px solid #C86A48;
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.progressBar__inner{
+    background-color: #FF0233;
+    height: 100%;
+    width: 40%;
+}

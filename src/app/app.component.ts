@@ -6,5 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'app';
+  title = 'FinalCounter';
+  progress = 0;
+  totalCount = 0;
+  
+  updateProgressbar($event){
+    this.progress = (1-($event/this.totalCount))*100;
+    console.log($event);
+  }
+
+  initCountdown($event){
+    this.totalCount = $event;
+  }
+
+
+
 }
