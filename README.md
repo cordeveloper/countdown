@@ -1,6 +1,7 @@
 # Countdown
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.7.3.
+Crear una aplicación Angular consistente en una barra de progreso y un contador regresivo que se muestra por pantalla, el Finalcounter tendrá
+un input para cambiar los segundos totales y un boton de reseteo.
 
 ## Development server
 
