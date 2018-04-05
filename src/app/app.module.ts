@@ -3,11 +3,15 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
+import { ProgressBarComponent } from './progress-bar/progress-bar.component';
+import { CounterComponent } from './counter/counter.component';
 
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    ProgressBarComponent,
+    CounterComponent
   ],
   imports: [
     BrowserModule
