@@ -1,10 +1,10 @@
 <div class="container">
   <h1 class="appTitle">{{title}}</h1>
-  <app-progress-bar [progress]="60"></app-progress-bar>
-  <app-counter></app-counter>
+  <app-progress-bar [progress]="progress"></app-progress-bar>
+  <app-counter [counterInit]="10" (totalCount)="initCountdown($event)" (updateCounter)="updateProgressbar($event)" #counter>{{counter}}></app-counter>
   <p class="appFormContainer">
-    <input class="appInput" type="text" placeholder="Its the FinalCountdown"/>
-    <button class="appButton">Reset Counter</button>
+    <input [(ngModel)]="counter.counterInit" class="appInput" type="text" value="0" placeholder="Its the FinalCountdown"/>
+    <button (click)="counter.resetCount()" class="appButton">Reset Counter</button>
   </p>
 </div>
 

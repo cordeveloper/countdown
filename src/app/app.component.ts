@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FinalCounter';
+  progress = 0;
+  totalCount = 0;
+  
+  updateProgressbar($event){
+    this.progress = (1-($event/this.totalCount))*100;
+    console.log($event);
+  }
+
+  initCountdown($event){
+    this.totalCount = $event;
+  }
+
+
+
 }
